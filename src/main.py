@@ -22,9 +22,15 @@ def ten_to_roman(ten):
     if ten == 9:
         return 'XC'
 
+def hundred_to_roman(hundred):
+    if hundred == 0:
+        return ''
+    return 'C'
+
 
 def to_roman(number):
-    tens = number // 10
+    hundreds = number // 100
+    tens = (number // 10) % 10
     units = number % 10
-    return ten_to_roman(tens) + unit_to_roman(units)
+    return hundred_to_roman(hundreds) + ten_to_roman(tens) + unit_to_roman(units)
 
