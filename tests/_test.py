@@ -31,6 +31,8 @@ from ..src.main import to_roman
         (92, 'XCII'),
         (99, 'XCIX'),
         (100, 'C'),
+        (999, 'CMXCIX')
+
         
     ]
 )
