@@ -5,4 +5,6 @@ def to_roman(number):
         return 'V'
     elif number == 6:
         return 'VI'
+    elif number == 7:
+        return 'VII'
     return number * 'I'
