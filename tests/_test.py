@@ -26,11 +26,18 @@ from ..src.main import to_roman
         (51, 'LI'),
         (52, 'LII'),
         (63, 'LXIII'),
+        (75, 'LXXV'),
+        (85, 'LXXXV'),
         (90, 'XC'),
         (91, 'XCI'),
         (92, 'XCII'),
         (99, 'XCIX'),
         (100, 'C'),
+        (150, 'CL'),
+        (190, 'CXC'),
+        (400, 'CD'),
+        (500, 'D'),
+        (700, 'DCC'),
         (999, 'CMXCIX')
 
         
