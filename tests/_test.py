@@ -8,6 +8,7 @@ from ..src.main import to_roman
         (2, 'II'),
         (3, 'III'),
         (4, 'IV'),
+        (5, 'V'),
     ]
 )
 def test_to_roman(test_input, expected):
