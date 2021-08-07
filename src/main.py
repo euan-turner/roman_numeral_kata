@@ -7,8 +7,4 @@ def to_roman(number):
         return 'V' + (number - 5) * 'I'
     if number == 9:
         return 'IX'
-    if number == 10:
-        return 'X'
-    if number == 11:
-        return 'XI'
-    return 'XII'
+    return 'X' + (number - 10) * 'I'
