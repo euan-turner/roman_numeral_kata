@@ -15,6 +15,7 @@ from ..src.main import to_roman
         (10, 'X'),
         (11, 'XI'),
         (12, 'XII'),
+        (14, 'XIV'),
     ]
 )
 def test_to_roman(test_input, expected):
