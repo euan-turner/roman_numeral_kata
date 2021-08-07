@@ -34,10 +34,17 @@ def hundred_to_roman(hundred):
     if hundred == 9:
         return 'CM'
 
+def thousand_to_roman(thousand):
+    if thousand == 0:
+        return ''
+    if thousand < 4:
+        return thousand * 'M'
+
 
 def to_roman(number):
-    hundreds = number // 100
-    tens = (number // 10) % 10
+    thousands = number // 1000
+    hundreds = (number // 100) % 10
+    tens = ((number // 10) % 10) % 10
     units = number % 10
-    return hundred_to_roman(hundreds) + ten_to_roman(tens) + unit_to_roman(units)
+    return thousand_to_roman(thousands) + hundred_to_roman(hundreds) + ten_to_roman(tens) + unit_to_roman(units)
 

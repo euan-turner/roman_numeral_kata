@@ -38,7 +38,10 @@ from ..src.main import to_roman
         (400, 'CD'),
         (500, 'D'),
         (700, 'DCC'),
-        (999, 'CMXCIX')
+        (999, 'CMXCIX'),
+        (1000, 'M'),
+        (2000, 'MM'),
+        (3999, 'MMMCMXCIX'),
 
         
     ]
