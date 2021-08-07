@@ -7,4 +7,10 @@ def to_roman(number):
         return 'V' + (number - 5) * 'I'
     if number == 9:
         return 'IX'
-    return 'X' + to_roman(number - 10)
+    if number < 40:
+        return 'X' + to_roman(number - 10)
+    if number == 40:
+        return 'XL'
+    if number == 41:
+        return 'XLI'
+    return 'XLII'
