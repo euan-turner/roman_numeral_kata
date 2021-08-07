@@ -9,5 +9,9 @@ def to_roman(number):
         return 'IX'
     if number < 40:
         return 'X' + to_roman(number - 10)
-    return 'XL' + to_roman(number - 40)
+    if number < 50:
+        return 'XL' + to_roman(number - 40)
+    if number < 90:
+        return 'L' + to_roman(number - 50)
+
 
