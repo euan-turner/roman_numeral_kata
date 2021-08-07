@@ -25,6 +25,10 @@ from ..src.main import to_roman
         (50, 'L'),
         (51, 'LI'),
         (52, 'LII'),
+        (90, 'XC'),
+        (91, 'XCI'),
+        (92, 'XCII'),
+        (99, 'XCIX')
     ]
 )
 def test_to_roman(test_input, expected):
