@@ -5,6 +5,7 @@ from ..src.main import to_roman
     "test_input, expected", 
     [
         (1, 'I'),
+        (2, 'II'),
     ]
 )
 def test_to_roman(test_input, expected):
