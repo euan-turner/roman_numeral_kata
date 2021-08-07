@@ -1,17 +1,30 @@
-def to_roman(number):
-    if number < 4:
-        return number * 'I'
-    if number == 4:
+def unit_to_roman(unit):
+    if unit == 0:
+        return ''
+    if unit < 4:
+        return unit * 'I'
+    if unit == 4:
         return 'IV'
-    if number < 9:
-        return 'V' + (number - 5) * 'I'
-    if number == 9:
+    if unit < 9:
+        return 'V' + (unit - 5) * 'I'
+    if unit == 9:
         return 'IX'
-    if number < 40:
-        return 'X' + to_roman(number - 10)
-    if number < 50:
-        return 'XL' + to_roman(number - 40)
-    if number < 90:
-        return 'L' + to_roman(number - 50)
-    return 'XC' + to_roman(number - 90)
+
+def ten_to_roman(ten):
+    if ten == 0:
+        return ''
+    if ten < 4:
+        return 'X'
+    if ten < 5:
+        return 'XL'
+    if ten < 9:
+        return 'L' + (ten - 5) * 'X'
+    if ten == 9:
+        return 'XC'
+
+
+def to_roman(number):
+    tens = number // 10
+    units = number % 10
+    return ten_to_roman(tens) + unit_to_roman(units)
 
